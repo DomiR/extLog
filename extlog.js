@@ -124,12 +124,8 @@ function log(logger, level, message_args) {
 			}
 			catch(e){
 				if (require != null){
-					var util = require("util")
-					json = util.inspect(msg, false, null, true)
-				}
-				else{
-					consoleLine(logger, level, util.inspect(e), time, true);
-					return;
+					var inspect = require("util-inspect")
+					json = inspect(msg, false, null, true)
 				}
 			}
 			consoleLine(logger, level, json, time, true);
