@@ -1,10 +1,9 @@
 {
   "name": "extlog",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy, clear and colored logging",
   "main": "extlog.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha tests"
   },
   "repository": {
     "type": "git",
